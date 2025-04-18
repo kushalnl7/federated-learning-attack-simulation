@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# PyTorch cache (datasets etc.)
+data/
+*.pt
+*.pth
+*.ckpt
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Results generated after training
+results_summary.txt
+round_accuracy_results.csv
+accuracy_over_rounds.png
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Flower / Ray temporary files
+ray_results/
+flwr_tmp/
+
+# Python Packaging
+build/
+dist/
+*.egg-info/
