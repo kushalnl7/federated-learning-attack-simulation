@@ -17,11 +17,11 @@ This project implements a **Federated Learning (FL)** setup using **Flower** and
 
 ---
 
-## 🚀 Results: Baseline (Clean Training)
+## Results: Baseline (Clean Training)
 
 After 10 communication rounds, the federated model achieved **~98.8% accuracy** on the MNIST test set.
 
-### 📈 Accuracy Over Rounds
+### Accuracy Over Rounds
 
 ![Accuracy Curve](./6bf6b6cf-0039-4b9f-8abe-c38aadc8639a.png)
 
@@ -40,14 +40,7 @@ After 10 communication rounds, the federated model achieved **~98.8% accuracy** 
 
 ---
 
-## 📂 Files Generated
-
-- `round_accuracy_results.csv` – Accuracy recorded after each round.
-- `accuracy_over_rounds.png` – Graph showing accuracy vs rounds.
-
----
-
-## 🔥 Next Phase: Adversarial Attack Simulation
+## Next Phase: Adversarial Attack Simulation
 
 After validating clean baseline performance, the next steps include simulating attacks such as:
 - Label Flipping Attack
