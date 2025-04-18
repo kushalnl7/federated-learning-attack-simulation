@@ -25,19 +25,6 @@ After 10 communication rounds, the federated model achieved **~98.8% accuracy** 
 
 ![Accuracy Curve](./accuracy_over_rounds.png)
 
-| Round | Accuracy |
-|:------|:---------|
-| 1     | 80.92%   |
-| 2     | 89.74%   |
-| 3     | 95.07%   |
-| 4     | 97.32%   |
-| 5     | 97.70%   |
-| 6     | 97.93%   |
-| 7     | 98.43%   |
-| 8     | 98.51%   |
-| 9     | 98.70%   |
-| 10    | 98.82%   |
-
 ---
 
 ## Next Phase: Adversarial Attack Simulation
