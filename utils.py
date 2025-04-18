@@ -1,4 +1,4 @@
-# utils_clean.py
+# utils.py
 from torchvision import datasets, transforms
 import numpy as np
 
@@ -16,7 +16,6 @@ def partition_data(train_dataset, num_clients, non_iid=True):
     labels = np.array(train_dataset.targets)
 
     if not non_iid:
-        # IID
         all_indices = np.arange(len(train_dataset))
         np.random.shuffle(all_indices)
         return [
@@ -24,7 +23,6 @@ def partition_data(train_dataset, num_clients, non_iid=True):
             for i in range(num_clients)
         ]
 
-    # Balanced Non-IID Partition
     idx_by_label = {i: np.where(labels == i)[0].tolist() for i in range(10)}
     client_indices = []
 

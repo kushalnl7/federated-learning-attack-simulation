@@ -1,4 +1,4 @@
-# app_clean.py
+# app.py
 import torch
 from torch.utils.data import DataLoader, Subset
 import flwr as fl
@@ -11,7 +11,7 @@ from client import FlowerClient
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Centralized evaluation after each round
+# Centralized evaluation function
 def evaluate_global_model(model, test_loader):
     model.eval()
     loss, correct = 0.0, 0
@@ -48,14 +48,12 @@ if __name__ == "__main__":
             super().__init__()
             self.global_model = global_model
             self.history = []
-        
+
         def aggregate_fit(self, rnd, results, failures):
             aggregated_result = super().aggregate_fit(rnd, results, failures)
 
             if aggregated_result is not None:
-                parameters_aggregated, _ = aggregated_result  # ✅ unpack tuple (parameters, metrics)
-
-                # ✅ Apply new aggregated parameters to the global model
+                parameters_aggregated, _ = aggregated_result
                 params_ndarrays = fl.common.parameters_to_ndarrays(parameters_aggregated)
                 params_dict = zip(self.global_model.state_dict().keys(), params_ndarrays)
                 state_dict = {k: torch.tensor(v) for k, v in params_dict}
@@ -80,18 +78,18 @@ if __name__ == "__main__":
     end_time = time.time()
     print(f"\n⏱️ Simulation completed in {end_time - start_time:.2f} seconds.")
 
-    # Save results
+    # Save round-wise results
     with open("round_centralized_accuracy.csv", "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["Round", "Accuracy"])
         writer.writerows(strategy.history)
 
-    # Plot results
+    # Plot
     rounds = [r for r, _ in strategy.history]
     accuracies = [a for _, a in strategy.history]
 
     plt.plot(rounds, accuracies, marker="o")
-    plt.title("Global Accuracy over Rounds (Centralized Evaluation)")
+    plt.title("Global Test Accuracy over Rounds")
     plt.xlabel("Round")
     plt.ylabel("Accuracy")
     plt.grid(True)
