@@ -23,7 +23,7 @@ After 10 communication rounds, the federated model achieved **~98.8% accuracy** 
 
 ### Accuracy Over Rounds
 
-![Accuracy Curve](./6bf6b6cf-0039-4b9f-8abe-c38aadc8639a.png)
+![Accuracy Curve](./accuracy_over_rounds.png)
 
 | Round | Accuracy |
 |:------|:---------|
