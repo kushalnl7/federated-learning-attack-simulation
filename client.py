@@ -1,9 +1,8 @@
-# client.py
+# client_clean.py
 import flwr as fl
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import DataLoader
 from model import Net
 
 class FlowerClient(fl.client.NumPyClient):
@@ -26,7 +25,7 @@ class FlowerClient(fl.client.NumPyClient):
         self.set_parameters(parameters)
         self.model.train()
         optimizer = optim.SGD(self.model.parameters(), lr=0.05, momentum=0.9)
-        for _ in range(5):  # 🔥 5 local epochs
+        for _ in range(3):
             for x, y in self.train_loader:
                 x, y = x.to(self.device), y.to(self.device)
                 optimizer.zero_grad()
@@ -45,6 +44,5 @@ class FlowerClient(fl.client.NumPyClient):
                 pred = self.model(x)
                 loss += nn.CrossEntropyLoss()(pred, y).item()
                 correct += (pred.argmax(1) == y).sum().item()
-
         accuracy = correct / len(self.test_loader.dataset)
         return float(loss), len(self.test_loader.dataset), {"accuracy": accuracy}
