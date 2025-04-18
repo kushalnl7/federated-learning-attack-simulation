@@ -22,9 +22,6 @@ data/
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-
 # Flower / Ray temporary files
 ray_results/
 flwr_tmp/
