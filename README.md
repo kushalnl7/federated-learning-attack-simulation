@@ -9,8 +9,8 @@ This project implements a **Federated Learning (FL)** setup using **Flower** and
 - **Dataset**: MNIST (handwritten digits)
 - **Model**: Lightweight CNN
 - **Frameworks**: Flower (FL framework), PyTorch
-- **Clients**: 5
-- **Data Partitioning**: Mild Non-IID (5 random labels per client)
+- **Clients**: 10
+- **Data Partitioning**: Mild Non-IID (8 random labels per client)
 - **Rounds**: 10
 - **Local Training**: 3 epochs per round
 - **Optimizer**: SGD (lr = 0.05, momentum = 0.9)
@@ -19,11 +19,11 @@ This project implements a **Federated Learning (FL)** setup using **Flower** and
 
 ## Results: Baseline (Clean Training)
 
-After 10 communication rounds, the federated model achieved **~98.8% accuracy** on the MNIST test set.
+After 10 communication rounds, the federated model achieved **~99.1% accuracy** on the MNIST test set.
 
 ### Accuracy Over Rounds
 
-![Accuracy Curve](./accuracy_over_rounds.png)
+![Accuracy Curve](./global_accuracy_over_rounds.png)
 
 ---
 
