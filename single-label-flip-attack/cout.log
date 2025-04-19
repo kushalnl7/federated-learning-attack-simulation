@@ -1,0 +1,39 @@
+
+🚀 Running simulation with 10% malicious clients...
+📈 [Round 1] Global Test Accuracy: 85.02%
+📈 [Round 2] Global Test Accuracy: 97.95%
+📈 [Round 3] Global Test Accuracy: 98.36%
+📈 [Round 4] Global Test Accuracy: 97.29%
+📈 [Round 5] Global Test Accuracy: 98.89%
+📈 [Round 6] Global Test Accuracy: 98.76%
+📈 [Round 7] Global Test Accuracy: 98.89%
+📈 [Round 8] Global Test Accuracy: 99.06%
+📈 [Round 9] Global Test Accuracy: 98.94%
+📈 [Round 10] Global Test Accuracy: 98.99%
+⏱️ Simulation with 10% malicious clients completed in 770.39 seconds.
+
+🚀 Running simulation with 20% malicious clients...
+📈 [Round 1] Global Test Accuracy: 92.22%
+📈 [Round 2] Global Test Accuracy: 98.10%
+📈 [Round 3] Global Test Accuracy: 98.50%
+📈 [Round 4] Global Test Accuracy: 98.76%
+📈 [Round 5] Global Test Accuracy: 98.94%
+📈 [Round 6] Global Test Accuracy: 98.37%
+📈 [Round 7] Global Test Accuracy: 99.05%
+📈 [Round 8] Global Test Accuracy: 98.86%
+📈 [Round 9] Global Test Accuracy: 99.12%
+📈 [Round 10] Global Test Accuracy: 99.21%
+⏱️ Simulation with 20% malicious clients completed in 459.20 seconds.
+
+🚀 Running simulation with 50% malicious clients...
+📈 [Round 1] Global Test Accuracy: 71.80%
+📈 [Round 2] Global Test Accuracy: 87.09%
+📈 [Round 3] Global Test Accuracy: 87.53%
+📈 [Round 4] Global Test Accuracy: 87.63%
+📈 [Round 5] Global Test Accuracy: 87.80%
+📈 [Round 6] Global Test Accuracy: 87.71%
+📈 [Round 7] Global Test Accuracy: 87.86%
+📈 [Round 8] Global Test Accuracy: 87.86%
+📈 [Round 9] Global Test Accuracy: 87.96%
+📈 [Round 10] Global Test Accuracy: 87.94%
+⏱️ Simulation with 50% malicious clients completed in 464.79 seconds.
