@@ -9,10 +9,10 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 # Fix output directory
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-import torch
-from torch.utils.data import DataLoader, Subset
-import flwr as fl
-import matplotlib.pyplot as plt
+import torch  # type: ignore
+from torch.utils.data import DataLoader, Subset # type: ignore
+import flwr as fl # type: ignore
+import matplotlib.pyplot as plt # type: ignore
 import random
 import csv
 import time
