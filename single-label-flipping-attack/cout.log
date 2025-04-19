@@ -1,0 +1,2167 @@
+/Users/kushal/Documents/TAMU/SEM2/703-CyberSecurityRisk/Project/utils.py:16: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  labels = np.array(train_dataset.targets)
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.simulation.start_simulation() is deprecated.
+	Instead, use the `flwr run` CLI command to start a local simulation in your Flower app, as shown for example below:
+
+		$ flwr new  # Create a new Flower app from a template
+
+		$ flwr run  # Run the Flower app in Simulation Mode
+
+	Using `start_simulation()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower simulation, config: num_rounds=10, no round_timeout
+2025-04-19 00:22:28,200	INFO worker.py:1852 -- Started a local Ray instance.
+2025-04-19 00:22:28,255	INFO packaging.py:575 -- Creating a file package for local module '..'.
+2025-04-19 00:22:28,284	INFO packaging.py:367 -- Pushing file package 'gcs://_ray_pkg_c26e88a28f6fd3c1.zip' (0.54MiB) to Ray cluster...
+2025-04-19 00:22:28,286	INFO packaging.py:380 -- Successfully pushed file package 'gcs://_ray_pkg_c26e88a28f6fd3c1.zip'.
+[92mINFO [0m:      Flower VCE: Ray initialized with resources: {'CPU': 8.0, 'object_store_memory': 1700187340.0, 'node:127.0.0.1': 1.0, 'memory': 3967103796.0, 'node:__internal_head__': 1.0}
+[92mINFO [0m:      Optimize your simulation with Flower VCE: https://flower.ai/docs/framework/how-to-run-simulations.html
+[92mINFO [0m:      No `client_resources` specified. Using minimal resources for clients.
+[92mINFO [0m:      Flower VCE: Resources for each Virtual Client: {'num_cpus': 1, 'num_gpus': 0.0}
+[92mINFO [0m:      Flower VCE: Creating VirtualClientEngineActorPool with 8 actors
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+[92mINFO [0m:      Received initial parameters from one random client
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      Evaluation returned no results (`None`)
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37668)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37668)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37668)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=37668)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37668)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37668)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(ClientAppActor pid=37669)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37667)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37667)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[93mWARNING [0m:   No fit_metrics_aggregation_fn provided
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37667)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[93mWARNING [0m:   No evaluate_metrics_aggregation_fn provided
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             This is a deprecated feature. It will be removed[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             entirely in future versions of Flower.[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 4x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             This is a deprecated feature. It will be removed[32m [repeated 4x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             entirely in future versions of Flower.[32m [repeated 4x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 4x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37674)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37674)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37674)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37673)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37673)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37673)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37670)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37670)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37670)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37667)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37667)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37667)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37669)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37669)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37669)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m             This is a deprecated feature. It will be removed[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m             entirely in future versions of Flower.[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=37669)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m             This is a deprecated feature. It will be removed[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m             entirely in future versions of Flower.[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37673)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37673)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37673)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37670)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37672)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37673)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37673)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37673)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=37670)[0m 
+[36m(ClientAppActor pid=37670)[0m         
+[36m(ClientAppActor pid=37670)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[36m(ClientAppActor pid=37672)[0m 
+[36m(ClientAppActor pid=37672)[0m         
+[36m(ClientAppActor pid=37668)[0m 
+[36m(ClientAppActor pid=37668)[0m         
+[36m(ClientAppActor pid=37671)[0m 
+[36m(ClientAppActor pid=37671)[0m         
+[36m(ClientAppActor pid=37669)[0m 
+[36m(ClientAppActor pid=37669)[0m         
+[36m(ClientAppActor pid=37674)[0m 
+[36m(ClientAppActor pid=37674)[0m         
+[36m(ClientAppActor pid=37673)[0m 
+[36m(ClientAppActor pid=37673)[0m         
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=37673)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=37667)[0m 
+[36m(ClientAppActor pid=37667)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 10 round(s) in 683.26s
+[92mINFO [0m:      	History (loss, distributed):
+[92mINFO [0m:      		round 1: 176.1060756444931
+[92mINFO [0m:      		round 2: 14.487309732940048
+[92mINFO [0m:      		round 3: 7.4370387697272236
+[92mINFO [0m:      		round 4: 6.276500863372348
+[92mINFO [0m:      		round 5: 5.50749126917799
+[92mINFO [0m:      		round 6: 5.050515201204689
+[92mINFO [0m:      		round 7: 5.395120798697462
+[92mINFO [0m:      		round 8: 5.1984800385907874
+[92mINFO [0m:      		round 9: 4.688035900120668
+[92mINFO [0m:      		round 10: 4.785458902537357
+[92mINFO [0m:      
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.simulation.start_simulation() is deprecated.
+	Instead, use the `flwr run` CLI command to start a local simulation in your Flower app, as shown for example below:
+
+		$ flwr new  # Create a new Flower app from a template
+
+		$ flwr run  # Run the Flower app in Simulation Mode
+
+	Using `start_simulation()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower simulation, config: num_rounds=10, no round_timeout
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=37667)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=37667)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=37667)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+2025-04-19 00:33:58,576	INFO worker.py:1852 -- Started a local Ray instance.
+2025-04-19 00:33:58,636	INFO packaging.py:575 -- Creating a file package for local module '..'.
+2025-04-19 00:33:58,659	INFO packaging.py:367 -- Pushing file package 'gcs://_ray_pkg_bc74402a15aae5fb.zip' (0.60MiB) to Ray cluster...
+2025-04-19 00:33:58,661	INFO packaging.py:380 -- Successfully pushed file package 'gcs://_ray_pkg_bc74402a15aae5fb.zip'.
+[92mINFO [0m:      Flower VCE: Ray initialized with resources: {'CPU': 8.0, 'memory': 3729470260.0, 'node:127.0.0.1': 1.0, 'node:__internal_head__': 1.0, 'object_store_memory': 1598344396.0}
+[92mINFO [0m:      Optimize your simulation with Flower VCE: https://flower.ai/docs/framework/how-to-run-simulations.html
+[92mINFO [0m:      No `client_resources` specified. Using minimal resources for clients.
+[92mINFO [0m:      Flower VCE: Resources for each Virtual Client: {'num_cpus': 1, 'num_gpus': 0.0}
+[92mINFO [0m:      Flower VCE: Creating VirtualClientEngineActorPool with 8 actors
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+[92mINFO [0m:      Received initial parameters from one random client
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      Evaluation returned no results (`None`)
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39797)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39797)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39801)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39801)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39801)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39801)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39796)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             This is a deprecated feature. It will be removed[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             entirely in future versions of Flower.[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[93mWARNING [0m:   No fit_metrics_aggregation_fn provided
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[93mWARNING [0m:   No evaluate_metrics_aggregation_fn provided
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39796)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39796)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39796)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39798)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39800)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39800)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39800)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39798)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39797)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39797)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39797)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39798)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39801)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39801)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39801)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39801)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39801)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39801)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39801)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39801)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39801)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39801)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39801)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39798)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39798)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39802)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39802)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39802)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39802)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39802)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39802)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39802)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39802)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39802)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39802)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39802)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39797)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39803)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39803)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39803)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39799)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39799)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39799)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39796)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39801)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39803)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39803)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39803)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 7x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39800)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39800)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39800)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[36m(ClientAppActor pid=39801)[0m 
+[36m(ClientAppActor pid=39801)[0m         
+[36m(ClientAppActor pid=39797)[0m 
+[36m(ClientAppActor pid=39797)[0m         
+[36m(ClientAppActor pid=39802)[0m 
+[36m(ClientAppActor pid=39802)[0m         
+[36m(ClientAppActor pid=39798)[0m 
+[36m(ClientAppActor pid=39798)[0m         
+[36m(ClientAppActor pid=39796)[0m 
+[36m(ClientAppActor pid=39796)[0m         
+[36m(ClientAppActor pid=39803)[0m 
+[36m(ClientAppActor pid=39803)[0m         
+[36m(ClientAppActor pid=39800)[0m 
+[36m(ClientAppActor pid=39800)[0m         
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39800)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=39799)[0m 
+[36m(ClientAppActor pid=39799)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 10 round(s) in 699.86s
+[92mINFO [0m:      	History (loss, distributed):
+[92mINFO [0m:      		round 1: 134.11233592033386
+[92mINFO [0m:      		round 2: 14.18189959321171
+[92mINFO [0m:      		round 3: 13.015140465460718
+[92mINFO [0m:      		round 4: 6.423443837149534
+[92mINFO [0m:      		round 5: 11.575259076431394
+[92mINFO [0m:      		round 6: 5.75725090058404
+[92mINFO [0m:      		round 7: 12.02063718251884
+[92mINFO [0m:      		round 8: 5.223621601078776
+[92mINFO [0m:      		round 9: 17.497114161029458
+[92mINFO [0m:      		round 10: 5.379165732603724
+[92mINFO [0m:      
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.simulation.start_simulation() is deprecated.
+	Instead, use the `flwr run` CLI command to start a local simulation in your Flower app, as shown for example below:
+
+		$ flwr new  # Create a new Flower app from a template
+
+		$ flwr run  # Run the Flower app in Simulation Mode
+
+	Using `start_simulation()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower simulation, config: num_rounds=10, no round_timeout
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=39799)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=39799)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=39799)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+2025-04-19 00:45:46,952	INFO worker.py:1852 -- Started a local Ray instance.
+2025-04-19 00:45:47,061	INFO packaging.py:575 -- Creating a file package for local module '..'.
+2025-04-19 00:45:47,164	INFO packaging.py:367 -- Pushing file package 'gcs://_ray_pkg_c2f596a043433326.zip' (0.66MiB) to Ray cluster...
+2025-04-19 00:45:47,166	INFO packaging.py:380 -- Successfully pushed file package 'gcs://_ray_pkg_c2f596a043433326.zip'.
+[92mINFO [0m:      Flower VCE: Ray initialized with resources: {'CPU': 8.0, 'object_store_memory': 1491542016.0, 'node:127.0.0.1': 1.0, 'memory': 3480264704.0, 'node:__internal_head__': 1.0}
+[92mINFO [0m:      Optimize your simulation with Flower VCE: https://flower.ai/docs/framework/how-to-run-simulations.html
+[92mINFO [0m:      No `client_resources` specified. Using minimal resources for clients.
+[92mINFO [0m:      Flower VCE: Resources for each Virtual Client: {'num_cpus': 1, 'num_gpus': 0.0}
+[92mINFO [0m:      Flower VCE: Creating VirtualClientEngineActorPool with 8 actors
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+[92mINFO [0m:      Received initial parameters from one random client
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      Evaluation returned no results (`None`)
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41917)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41917)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41917)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=41917)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41917)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41917)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41918)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             This is a deprecated feature. It will be removed[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             entirely in future versions of Flower.[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41911)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41911)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41911)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41911)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[93mWARNING [0m:   No fit_metrics_aggregation_fn provided
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41911)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41911)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41911)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41911)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[93mWARNING [0m:   No evaluate_metrics_aggregation_fn provided
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41911)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41916)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41916)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41911)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41911)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41916)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41916)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41913)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41912)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41912)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41912)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m             This is a deprecated feature. It will be removed[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m             entirely in future versions of Flower.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41918)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m             This is a deprecated feature. It will be removed[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m             entirely in future versions of Flower.[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41914)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41914)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41914)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41915)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m             This is a deprecated feature. It will be removed[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m             entirely in future versions of Flower.[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 9x across cluster][0m
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m             This is a deprecated feature. It will be removed[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m             entirely in future versions of Flower.[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41918)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41918)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41918)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41918)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41915)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m             This is a deprecated feature. It will be removed[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m             entirely in future versions of Flower.[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41918)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41918)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41918)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41918)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41912)[0m 
+[36m(ClientAppActor pid=41912)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41912)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41912)[0m         
+[36m(ClientAppActor pid=41912)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41914)[0m 
+[36m(ClientAppActor pid=41914)[0m         
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[36m(ClientAppActor pid=41911)[0m 
+[36m(ClientAppActor pid=41911)[0m         
+[36m(ClientAppActor pid=41913)[0m 
+[36m(ClientAppActor pid=41913)[0m         
+[36m(ClientAppActor pid=41916)[0m 
+[36m(ClientAppActor pid=41916)[0m         
+[36m(ClientAppActor pid=41917)[0m 
+[36m(ClientAppActor pid=41917)[0m         
+[36m(ClientAppActor pid=41918)[0m 
+[36m(ClientAppActor pid=41918)[0m         
+[36m(ClientAppActor pid=41918)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m             This is a deprecated feature. It will be removed[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m             entirely in future versions of Flower.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41918)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.[32m [repeated 8x across cluster][0m
+[36m(ClientAppActor pid=41915)[0m 
+[36m(ClientAppActor pid=41915)[0m         
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 10 round(s) in 614.59s
+[92mINFO [0m:      	History (loss, distributed):
+[92mINFO [0m:      		round 1: 256.7078460454941
+[92mINFO [0m:      		round 2: 32.202513828873634
+[92mINFO [0m:      		round 3: 29.46744924224913
+[92mINFO [0m:      		round 4: 9.454178864602
+[92mINFO [0m:      		round 5: 103.07926221191883
+[92mINFO [0m:      		round 6: 4.811005172020487
+[92mINFO [0m:      		round 7: 54.85090263932943
+[92mINFO [0m:      		round 8: 5.172638349715271
+[92mINFO [0m:      		round 9: 84.29670017957687
+[92mINFO [0m:      		round 10: 4.648850810192015
+[92mINFO [0m:      
+
+🚀 Running simulation with 10% malicious clients...
+📈 [Round 1] Global Test Accuracy: 89.20%
+📈 [Round 2] Global Test Accuracy: 97.68%
+📈 [Round 3] Global Test Accuracy: 98.46%
+📈 [Round 4] Global Test Accuracy: 98.76%
+📈 [Round 5] Global Test Accuracy: 98.88%
+📈 [Round 6] Global Test Accuracy: 99.09%
+📈 [Round 7] Global Test Accuracy: 99.03%
+📈 [Round 8] Global Test Accuracy: 99.02%
+📈 [Round 9] Global Test Accuracy: 99.21%
+📈 [Round 10] Global Test Accuracy: 99.19%
+⏱️ Simulation with 10% malicious clients completed in 687.36 seconds.
+
+🚀 Running simulation with 20% malicious clients...
+📈 [Round 1] Global Test Accuracy: 90.60%
+📈 [Round 2] Global Test Accuracy: 97.60%
+📈 [Round 3] Global Test Accuracy: 97.04%
+📈 [Round 4] Global Test Accuracy: 98.80%
+📈 [Round 5] Global Test Accuracy: 97.79%
+📈 [Round 6] Global Test Accuracy: 98.96%
+📈 [Round 7] Global Test Accuracy: 97.39%
+📈 [Round 8] Global Test Accuracy: 99.06%
+📈 [Round 9] Global Test Accuracy: 94.60%
+📈 [Round 10] Global Test Accuracy: 99.11%
+⏱️ Simulation with 20% malicious clients completed in 708.95 seconds.
+
+🚀 Running simulation with 50% malicious clients...
+📈 [Round 1] Global Test Accuracy: 58.58%
+📈 [Round 2] Global Test Accuracy: 94.04%
+📈 [Round 3] Global Test Accuracy: 90.85%
+📈 [Round 4] Global Test Accuracy: 98.35%
+📈 [Round 5] Global Test Accuracy: 87.48%
+📈 [Round 6] Global Test Accuracy: 99.02%
+📈 [Round 7] Global Test Accuracy: 87.78%
+📈 [Round 8] Global Test Accuracy: 99.05%
+📈 [Round 9] Global Test Accuracy: 87.82%
+📈 [Round 10] Global Test Accuracy: 99.16%
+⏱️ Simulation with 50% malicious clients completed in 623.36 seconds.
+
+✅ Attack simulation results saved successfully!
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=41915)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=41915)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=41915)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.

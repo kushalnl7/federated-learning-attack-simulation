@@ -1,0 +1,73 @@
+
+🚀 Running simulation with 10% free-rider clients...
+[36m(ClientAppActor pid=25401)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 1] Global Test Accuracy: 89.72%
+[36m(ClientAppActor pid=25398)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 2] Global Test Accuracy: 97.79%
+[36m(ClientAppActor pid=25399)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 3] Global Test Accuracy: 98.79%
+[36m(ClientAppActor pid=25403)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 4] Global Test Accuracy: 98.90%
+[36m(ClientAppActor pid=25400)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 5] Global Test Accuracy: 98.97%
+[36m(ClientAppActor pid=25401)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 6] Global Test Accuracy: 99.00%
+[36m(ClientAppActor pid=25401)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 7] Global Test Accuracy: 99.14%
+[36m(ClientAppActor pid=25398)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 8] Global Test Accuracy: 99.09%
+[36m(ClientAppActor pid=25402)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 9] Global Test Accuracy: 99.11%
+[36m(ClientAppActor pid=25404)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 10] Global Test Accuracy: 99.20%
+⏱️ Simulation with 10% free-riders completed in 394.28 seconds.
+
+🚀 Running simulation with 20% free-rider clients...
+[36m(ClientAppActor pid=26736)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 1] Global Test Accuracy: 88.43%
+[36m(ClientAppActor pid=26743)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 2x across cluster][0m
+📈 [Round 2] Global Test Accuracy: 96.47%
+[36m(ClientAppActor pid=26739)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 2x across cluster][0m
+📈 [Round 3] Global Test Accuracy: 98.43%
+[36m(ClientAppActor pid=26737)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 2x across cluster][0m
+📈 [Round 4] Global Test Accuracy: 98.75%
+[36m(ClientAppActor pid=26743)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 2x across cluster][0m
+📈 [Round 5] Global Test Accuracy: 98.91%
+[36m(ClientAppActor pid=26742)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 2x across cluster][0m
+📈 [Round 6] Global Test Accuracy: 99.05%
+[36m(ClientAppActor pid=26738)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 2x across cluster][0m
+📈 [Round 7] Global Test Accuracy: 99.16%
+[36m(ClientAppActor pid=26737)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 2x across cluster][0m
+📈 [Round 8] Global Test Accuracy: 99.14%
+[36m(ClientAppActor pid=26741)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 2x across cluster][0m
+📈 [Round 9] Global Test Accuracy: 99.08%
+[36m(ClientAppActor pid=26737)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 2x across cluster][0m
+📈 [Round 10] Global Test Accuracy: 99.19%
+⏱️ Simulation with 20% free-riders completed in 364.87 seconds.
+
+🚀 Running simulation with 50% free-rider clients...
+[36m(ClientAppActor pid=26741)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+[36m(ClientAppActor pid=27897)[0m ⚠️ Free-rider client sending back received parameters without any local training!
+📈 [Round 1] Global Test Accuracy: 78.60%
+[36m(ClientAppActor pid=27904)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 5x across cluster][0m
+📈 [Round 2] Global Test Accuracy: 94.86%
+[36m(ClientAppActor pid=27904)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 5x across cluster][0m
+📈 [Round 3] Global Test Accuracy: 97.48%
+[36m(ClientAppActor pid=27899)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 5x across cluster][0m
+📈 [Round 4] Global Test Accuracy: 98.17%
+[36m(ClientAppActor pid=27901)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 5x across cluster][0m
+📈 [Round 5] Global Test Accuracy: 98.36%
+[36m(ClientAppActor pid=27902)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 5x across cluster][0m
+📈 [Round 6] Global Test Accuracy: 98.49%
+[36m(ClientAppActor pid=27902)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 5x across cluster][0m
+📈 [Round 7] Global Test Accuracy: 98.67%
+[36m(ClientAppActor pid=27904)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 5x across cluster][0m
+📈 [Round 8] Global Test Accuracy: 98.72%
+[36m(ClientAppActor pid=27900)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 5x across cluster][0m
+📈 [Round 9] Global Test Accuracy: 98.82%
+[36m(ClientAppActor pid=27900)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 5x across cluster][0m
+📈 [Round 10] Global Test Accuracy: 98.75%
+⏱️ Simulation with 50% free-riders completed in 279.18 seconds.
+
+✅ Free-rider attack simulation results saved successfully!
+[36m(ClientAppActor pid=27900)[0m ⚠️ Free-rider client sending back received parameters without any local training![32m [repeated 4x across cluster][0m

@@ -1,0 +1,93 @@
+
+🚀 Running simulation with 10% malicious clients (Scaling Attack)...
+[36m(ClientAppActor pid=31167)[0m ⚠️ Malicious client scaling updates by factor: 9.91
+📈 [Round 1] Global Test Accuracy: 56.37%
+[36m(ClientAppActor pid=31173)[0m ⚠️ Malicious client scaling updates by factor: 6.85
+📈 [Round 2] Global Test Accuracy: 97.92%
+[36m(ClientAppActor pid=31167)[0m ⚠️ Malicious client scaling updates by factor: 9.04
+📈 [Round 3] Global Test Accuracy: 98.61%
+[36m(ClientAppActor pid=31174)[0m ⚠️ Malicious client scaling updates by factor: 8.30
+📈 [Round 4] Global Test Accuracy: 98.05%
+[36m(ClientAppActor pid=31168)[0m ⚠️ Malicious client scaling updates by factor: 9.97
+📈 [Round 5] Global Test Accuracy: 50.60%
+[36m(ClientAppActor pid=31171)[0m ⚠️ Malicious client scaling updates by factor: 5.91
+📈 [Round 6] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=31169)[0m ⚠️ Malicious client scaling updates by factor: 6.91
+📈 [Round 7] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=31169)[0m ⚠️ Malicious client scaling updates by factor: 8.88
+📈 [Round 8] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=31169)[0m ⚠️ Malicious client scaling updates by factor: 9.42
+📈 [Round 9] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=31168)[0m ⚠️ Malicious client scaling updates by factor: 6.18
+📈 [Round 10] Global Test Accuracy: 9.80%
+⏱️ Simulation with 10% malicious clients completed in 459.94 seconds.
+
+🚀 Running simulation with 20% malicious clients (Scaling Attack)...
+[36m(ClientAppActor pid=32797)[0m ⚠️ Malicious client scaling updates by factor: 5.69
+[36m(ClientAppActor pid=32794)[0m ⚠️ Malicious client scaling updates by factor: 9.57
+📈 [Round 1] Global Test Accuracy: 83.53%
+[36m(ClientAppActor pid=32797)[0m ⚠️ Malicious client scaling updates by factor: 6.62
+📈 [Round 2] Global Test Accuracy: 88.60%
+[36m(ClientAppActor pid=32796)[0m ⚠️ Malicious client scaling updates by factor: 5.51[32m [repeated 2x across cluster][0m
+📈 [Round 3] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=32797)[0m ⚠️ Malicious client scaling updates by factor: 6.81[32m [repeated 2x across cluster][0m
+📈 [Round 4] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=32790)[0m ⚠️ Malicious client scaling updates by factor: 5.72[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=32795)[0m ⚠️ Malicious client scaling updates by factor: 9.26
+📈 [Round 5] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=32792)[0m ⚠️ Malicious client scaling updates by factor: 6.81
+📈 [Round 6] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=32796)[0m ⚠️ Malicious client scaling updates by factor: 8.00[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=32790)[0m ⚠️ Malicious client scaling updates by factor: 7.49
+📈 [Round 7] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=32794)[0m ⚠️ Malicious client scaling updates by factor: 5.48
+[36m(ClientAppActor pid=32793)[0m ⚠️ Malicious client scaling updates by factor: 8.42
+📈 [Round 8] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=32797)[0m ⚠️ Malicious client scaling updates by factor: 8.44
+📈 [Round 9] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=32793)[0m ⚠️ Malicious client scaling updates by factor: 6.77[32m [repeated 2x across cluster][0m
+📈 [Round 10] Global Test Accuracy: 9.80%
+⏱️ Simulation with 20% malicious clients completed in 443.78 seconds.
+
+🚀 Running simulation with 50% malicious clients (Scaling Attack)...
+[36m(ClientAppActor pid=32790)[0m ⚠️ Malicious client scaling updates by factor: 9.27
+[36m(ClientAppActor pid=34265)[0m ⚠️ Malicious client scaling updates by factor: 6.19
+[36m(ClientAppActor pid=34268)[0m ⚠️ Malicious client scaling updates by factor: 9.26[32m [repeated 4x across cluster][0m
+📈 [Round 1] Global Test Accuracy: 85.71%
+[36m(ClientAppActor pid=34268)[0m ⚠️ Malicious client scaling updates by factor: 6.75
+[36m(ClientAppActor pid=34271)[0m ⚠️ Malicious client scaling updates by factor: 7.17
+[36m(ClientAppActor pid=34270)[0m ⚠️ Malicious client scaling updates by factor: 5.84[32m [repeated 3x across cluster][0m
+📈 [Round 2] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=34268)[0m ⚠️ Malicious client scaling updates by factor: 7.39
+[36m(ClientAppActor pid=34270)[0m ⚠️ Malicious client scaling updates by factor: 9.36
+[36m(ClientAppActor pid=34264)[0m ⚠️ Malicious client scaling updates by factor: 8.79[32m [repeated 2x across cluster][0m
+📈 [Round 3] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=34268)[0m ⚠️ Malicious client scaling updates by factor: 6.63[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=34268)[0m ⚠️ Malicious client scaling updates by factor: 8.73[32m [repeated 4x across cluster][0m
+📈 [Round 4] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=34270)[0m ⚠️ Malicious client scaling updates by factor: 6.46
+[36m(ClientAppActor pid=34264)[0m ⚠️ Malicious client scaling updates by factor: 8.03
+[36m(ClientAppActor pid=34267)[0m ⚠️ Malicious client scaling updates by factor: 5.24[32m [repeated 3x across cluster][0m
+📈 [Round 5] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=34268)[0m ⚠️ Malicious client scaling updates by factor: 6.14
+[36m(ClientAppActor pid=34265)[0m ⚠️ Malicious client scaling updates by factor: 9.54
+[36m(ClientAppActor pid=34268)[0m ⚠️ Malicious client scaling updates by factor: 8.11[32m [repeated 3x across cluster][0m
+📈 [Round 6] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=34264)[0m ⚠️ Malicious client scaling updates by factor: 6.97
+[36m(ClientAppActor pid=34265)[0m ⚠️ Malicious client scaling updates by factor: 6.18
+[36m(ClientAppActor pid=34271)[0m ⚠️ Malicious client scaling updates by factor: 9.69[32m [repeated 3x across cluster][0m
+📈 [Round 7] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=34270)[0m ⚠️ Malicious client scaling updates by factor: 6.46
+[36m(ClientAppActor pid=34271)[0m ⚠️ Malicious client scaling updates by factor: 7.32
+[36m(ClientAppActor pid=34266)[0m ⚠️ Malicious client scaling updates by factor: 5.19[32m [repeated 2x across cluster][0m
+📈 [Round 8] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=34265)[0m ⚠️ Malicious client scaling updates by factor: 6.96[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=34265)[0m ⚠️ Malicious client scaling updates by factor: 7.18[32m [repeated 4x across cluster][0m
+📈 [Round 9] Global Test Accuracy: 9.80%
+[36m(ClientAppActor pid=34267)[0m ⚠️ Malicious client scaling updates by factor: 7.50
+[36m(ClientAppActor pid=34265)[0m ⚠️ Malicious client scaling updates by factor: 7.15
+📈 [Round 10] Global Test Accuracy: 9.80%
+⏱️ Simulation with 50% malicious clients completed in 446.12 seconds.
+
+✅ Scaling attack simulation results saved successfully!
+[36m(ClientAppActor pid=34264)[0m ⚠️ Malicious client scaling updates by factor: 8.37[32m [repeated 3x across cluster][0m
